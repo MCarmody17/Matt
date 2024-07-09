@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+
+
+header > h1 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #0ac7ca;
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: "Roboto", cursive;
+}
+
+
+h1 {
+    font-family: "Roboto", cursive;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 3px 3px 5px #9ccddc;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 20%;
+    max-height:80vh;
+    min-height: 70vh;
+    
+}
+
+.intro-title {
+    animation: fadeIn 4s;
+}
+
+.intro-name {
+    color: #9aeadd;
+}
+
+.intro-desc {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: left;
+    color: #fff;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
