@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/intro.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Intro() {
     return (
@@ -18,7 +20,7 @@ export default function Intro() {
             className="intro-contact"
           >
             
-            {" Email me!"}
+            <FontAwesomeIcon icon={faEnvelope} /> {" Email me!"}
           </a>
         </div>
     );
