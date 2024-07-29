@@ -1,0 +1,113 @@
+#about {
+    min-height: 70vh;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 100px;
+  }
+  .section-header{
+    color: #E6E6FA;
+    font-family: NTR, sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    text-align:start;
+  }
+  .about-description ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+    color: #fff;
+  }
+  
+  .about-description li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #178582;
+  }
+  
+  .about-description li::before {
+    content: "▹    ";
+    color: var(--green-bright);
+    position: absolute;
+    left: 0;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .about-description {
+    font-family: "NTR", sans-serif;
+    color: #D3D3D3;
+    max-width: 600px;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0;
+    text-shadow: 0.8px 0.8px 1.5px #9ccddc;
+  }
+  
+  .about-description a,
+  .about-description b {
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .about-description a{
+    color: #178582;
+  }
+  .about-description i {
+    font-size:40px;
+  }
+  .about-image {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  
+  .about-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 30px;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    border: none;
+  }
+  
+  @media only screen and (max-width: 788px) {
+    .about-image img {
+      max-width: 200px;
+    }
+  }
+  
+  .about-image:hover {
+    transform: translateY(-7px);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #about {
+      height: unset;
+      padding-left: unset;
+      padding-right: unset;
+      padding-top: 30%;
+    }
+  
+    .about-description {
+      font-size: 18px;
+      text-align: justify;
+    }
+  
+    .about-description a,
+    .about-description b {
+      font-size: 17px;
+    }
+  
+    .about-image img {
+      display: none;
+    }
+  
+    .about-content {
+      display: unset;
+    }
+  }

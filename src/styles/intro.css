@@ -1,44 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body {
-    font-family: "Roboto", cursive;
-}
-
-
-h1 {
-    font-family: "Roboto", cursive;
-    color: #fff;
-    font-size: 4rem;
-    text-shadow: 3px 3px 5px #9ccddc;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: #0a192f;
 }
 
 .intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 15%;
-    padding-top: 20%;
-    max-height:80vh;
-    min-height: 70vh;
-    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-size: cover; /* Maintain aspect ratio */
+
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px #9ccddc;
 }
 
 .intro-title {
-    animation: fadeIn 4s;
+    animation: fadeIn 6s;
 }
 
 .intro-name {
-    color: #9aeadd;
+    color: #178582;
 }
 
 .intro-desc {
     font-size: 1.2rem;
-    color: #fff;
-    text-align: left;
-    color: #fff;
+    color: #D3D3D3;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 3px #9ccddc;
 }
 
+.intro-contact {
+    font-size: 1.2rem;
+    color: #178582;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
 
 @keyframes fadeIn {
     0% {
@@ -49,3 +63,39 @@ h1 {
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #intro {
+      min-height: unset;
+      padding-left: unset;
+      padding-top: unset;
+      margin: 0;
+      align-items: center;
+    }
+  
+    .intro-title {
+      font-size: 46px;
+    }
+    .intro-name {
+      font-size: 46px;
+    }
+  
+    .Typist {
+      font-size: 36px;
+    }
+  
+    .intro-subtitle {
+      margin: 0;
+      font-size: 28px;
+    }
+  
+    .intro-desc {
+      font-size: 18px;
+      max-width: unset;
+      padding-bottom: 40px;
+    }
+  
+    .intro-contact {
+      font-size: 16px;
+    }
+  }

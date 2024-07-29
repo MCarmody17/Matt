@@ -1,0 +1,80 @@
+.experience-card {
+    margin: 20px;
+    height: 20rem;
+    padding: 0.5rem;
+    display: flex;
+    box-shadow: 2px 5px 10px rgba(231, 230, 230, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 25rem; 
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffff;
+}   
+
+.experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card h3 {
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: -.5px;
+    font-family: Calibre-Medium, sans-serif;
+    text-shadow: 0 15px 15px rgba(0, 0, 0, .16);
+    color: #ffff;
+}
+
+.experience-card h5 {
+    margin: 0;
+    padding: 0.2rem 0 0.5rem 0; /* Adjust padding to create space below h3 */
+    font-size: 1rem;
+    color: #ffff;
+}
+
+
+.experience-card p {
+    font-size: 0.9rem; /* Increase font size */
+    color: #ffff;
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+/* Tech Stack Icons */
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    bottom: 10px;
+}
+
+.tech-stack i {
+    font-size: 2rem; /* Adjust icon size */
+    color: black; /* Example icon color */
+}
+
+
+.card-mars {
+    background: linear-gradient(135deg, #de6161 10%, #2657eb);
+}
+
+.card-moon {
+    background: linear-gradient(135deg, #E8CBC0 10%, #636fa4);
+}
+
+.card-sun {
+    background: linear-gradient(135deg, #F3904F 10%, #3B4371);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .experience-card {
+        flex: 1 1 100%;
+    }
+}

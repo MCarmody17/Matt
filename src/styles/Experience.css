@@ -1,0 +1,46 @@
+#experience {
+    min-height: 80vh;
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+.experience-content{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center; /* Center the cards */
+  max-width: none;
+}
+
+
+.experience-card a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 1.17em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #experience {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .jss1 {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+
+}
