@@ -25,22 +25,52 @@
   unicode-bidi: isolate;
 }
 
+@media only screen and (max-width: 768px) {
+  .experience-content {
+      display: flex;
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center the cards */
+      justify-content: center; /* Center the cards vertically */
+      padding-top: 0;
+      max-width: 85%;
+      padding-bottom: 5rem;
+  }
+
+  .experience-card {
+      width: 90%; /* Ensure full width on small screens */
+      margin: 10px 0; /* Add vertical margin between cards */
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   #experience {
-    padding-left: unset;
-    padding-right: unset;
+      padding-left: unset;
+      padding-right: unset;
+      max-width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content */
   }
 
-  .jss1 {
-    height: unset !important;
-    flex-direction: column !important;
+  .section-header {
+      order: -1; /* Ensure the section header stays at the top */
+      width: 100%; /* Ensure the section header takes full width */
   }
 
-  .makeStyles-root-1 {
-    height: unset !important;
-    width: unset;
-    flex-direction: column;
+  .experience-content {
+      display: flex;
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center the cards */
+      justify-content: center; /* Center the cards vertically */
+      padding-top: 0;
+      padding-bottom: 5rem;
+      width: 100%; /* Ensure the container takes full width */
   }
 
+  .experience-card {
+      width: 100%; /* Ensure full width on small screens */
+      margin: 10px 0; /* Add vertical margin between cards */
+      box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  }
 }

@@ -107,3 +107,26 @@
         transform: translateY(0px);
     }
 }
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    #astronaut > img{
+        width: 150px; /* Reduce size for small screens */
+        left: auto; /* Reset left positioning */
+        padding-top: 1px;
+    }
+    #astronaut2 > img {
+        width: 150px; /* Reduce size for small screens */
+        left: 66%; /* Reset left positioning */
+        padding-top: 5rem;
+    }
+
+    #astronaut {
+        top: 10%;
+        left: 10%;
+    }
+
+    #astronaut2 {
+        top: 20%;
+        right: 10%;
+    }
+}

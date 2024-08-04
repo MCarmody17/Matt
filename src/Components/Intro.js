@@ -12,8 +12,8 @@ export default function Intro() {
             
             <div className="intro-desc">
                 I'm a Software Engineer from Brisbane, Australia,<br></br>
-                I'm super interested in Quantitative coding, Full Stack Development, Data,  <br></br>
-                Security, Cloud and DevOps and I have worked as a Research Assistant for Universities. 
+                I'm super interested in Quantitative coding, Machine Learning, Data,  
+                Security, Cloud and DevOps. I have also worked as a ML Research Assistant for Universities. 
             </div>
             <a
             href="mailto:Matthewcarmody17@gmail.com"

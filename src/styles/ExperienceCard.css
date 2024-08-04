@@ -76,5 +76,26 @@
 @media (max-width: 768px) {
     .experience-card {
         flex: 1 1 100%;
+        min-width: unset; /* Remove min-width for small screens */
+        height: auto; /* Adjust height */
+        padding: 1rem; /* Adjust padding */
+        
+    }
+
+    .experience-card h3 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .experience-card h5 {
+        font-size: 0.875rem; /* Adjust font size */
+    }
+
+    .experience-card p {
+        font-size: 0.75rem; /* Adjust font size */
+        padding-bottom: 1rem; /* Adjust padding */
+    }
+
+    .tech-stack i {
+        font-size: 1.5rem; /* Adjust icon size */
     }
 }
